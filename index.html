@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blendART Barber Studio — Frankfort, IL</title>
+  <meta name="description" content="blendART Barber Studio in Frankfort, Illinois. Loud fades, clean lineups, sculpted beards — five artists, one studio. Book online or walk in, Tue–Sat.">
+  <link rel="preload" href="fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/permanent-marker-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' font-family='Arial Black' fill='%23FF3D7F'>b</text></svg>">
+</head>
+<body>
+
+  <a class="skip-link" href="#services">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="wordmark" href="#top" aria-label="blendART Barber Studio — back to top">
+      blend<span class="wm-grad">ART</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Cuts</a>
+      <a href="#artists">Artists</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-loud btn-small" href="#book">Book now</a>
+    </nav>
+  </header>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="marker hero-tag">Frankfort, IL — walk-ins welcome</p>
+      <h1 class="hero-word">
+        <span class="hw-outline">BLEND</span>
+        <span class="hw-grad">ART</span>
+      </h1>
+      <p class="hero-sub">Barber studio. Five artists. Zero mid fades. Precision blends, razor lineups, and beard work treated like what it is — <strong>art on a moving canvas.</strong></p>
+      <div class="hero-cta">
+        <a class="btn btn-loud" href="#book">Book your cut</a>
+        <a class="btn btn-outline" href="tel:+17089951059">708.995.1059</a>
+      </div>
+      <ul class="stickers" aria-label="Quick facts">
+        <li class="sticker st-paper">4.7★ · 55+ reviews</li>
+        <li class="sticker st-red">TUE–SAT</li>
+        <li class="sticker st-marker marker">walk-ins? always.</li>
+      </ul>
+    </div>
+    <div class="spray spray-a" aria-hidden="true"></div>
+    <div class="spray spray-b" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ======================= SERVICES ======================= -->
+  <section class="section section-paper" id="services">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="marker eyebrow-marker">the menu</p>
+        <h2>Cuts &amp;<br><span class="h2-grad">prices</span></h2>
+        <p class="section-note">Starting prices — every artist sets their own. Lock it in when you book.</p>
+      </div>
+
+      <ul class="menu">
+        <li class="menu-item">
+          <div class="menu-name"><h3>Signature cut</h3><p>Consult, cut, style. Trend or classic — your call.</p></div>
+          <span class="menu-price marker">$25+</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-name"><h3>Skin fade</h3><p>Zero to grown-out, blended with no seams. The house move.</p></div>
+          <span class="menu-price marker">$30+</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-name"><h3>Cut + beard</h3><p>The full reset. Fresh cut, sculpted beard, hot towel.</p></div>
+          <span class="menu-price marker">$40+</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-name"><h3>Beard sculpt</h3><p>Shape, line, finish. Leave sharper than you came.</p></div>
+          <span class="menu-price marker">$15+</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-name"><h3>Kids' cut</h3><p>12 &amp; under. Patience included, tears optional.</p></div>
+          <span class="menu-price marker">$20+</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-name"><h3>Lineup / edge-up</h3><p>Crispy edges between full cuts.</p></div>
+          <span class="menu-price marker">$15+</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ======================= ARTISTS ======================= -->
+  <section class="section" id="artists">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="marker eyebrow-marker">the artists</p>
+        <h2>Five artists,<br><span class="h2-grad">five styles</span></h2>
+        <p class="section-note">Every artist keeps their own book and their own hours. Find your barber, stay loyal.</p>
+      </div>
+
+      <ul class="artist-grid" id="artist-grid">
+        <!-- Cards rendered by script.js from the BOOKING config -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= BOOKING ======================= -->
+  <section class="section section-book" id="book">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="marker eyebrow-marker">scheduling</p>
+        <h2>Get on<br><span class="h2-grad">the list</span></h2>
+        <p class="section-note">Pick an artist, see the open slots. Appointments first — walk-ins squeezed in when the day allows.</p>
+      </div>
+
+      <div class="book-tabs" id="book-tabs" role="tablist" aria-label="Choose an artist to book with">
+        <!-- Tabs rendered by script.js -->
+      </div>
+
+      <div class="book-panel" id="book-panel">
+        <!-- Google Calendar embed or external booking card, rendered by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= VISIT ======================= -->
+  <section class="section section-paper" id="visit">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="marker eyebrow-marker">the studio</p>
+        <h2>Find<br><span class="h2-grad">us</span></h2>
+      </div>
+
+      <div class="visit-grid">
+        <div class="visit-info">
+          <address>
+            <a href="https://maps.google.com/?q=20867+S.+LaGrange+Rd.+Frankfort,+IL+60423" target="_blank" rel="noopener">
+              20867 S. LaGrange Rd.<br>Frankfort, IL 60423
+            </a>
+          </address>
+          <p class="visit-phone"><a href="tel:+17089951059">708.995.1059</a></p>
+
+          <table class="hours" aria-label="Studio hours">
+            <tbody>
+              <tr><th scope="row">Mon</th><td>closed</td></tr>
+              <tr><th scope="row">Tue</th><td>10 — 7</td></tr>
+              <tr><th scope="row">Wed</th><td>10:30 — 5</td></tr>
+              <tr><th scope="row">Thu</th><td>10 — 7</td></tr>
+              <tr><th scope="row">Fri</th><td>10 — 7</td></tr>
+              <tr><th scope="row">Sat</th><td>10 — 5</td></tr>
+              <tr><th scope="row">Sun</th><td>closed</td></tr>
+            </tbody>
+          </table>
+          <p class="hours-note marker">hours vary by artist — their calendars don't lie</p>
+        </div>
+
+        <div class="visit-map">
+          <iframe
+            title="Map to blendART Barber Studio"
+            src="https://maps.google.com/maps?q=20867%20S%20LaGrange%20Rd%2C%20Frankfort%2C%20IL%2060423&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="wordmark wordmark-big" href="#top">blend<span class="wm-grad">ART</span></a>
+      <p class="footer-line">Barber Studio · Frankfort, IL · <a href="tel:+17089951059">708.995.1059</a></p>
+      <p class="footer-fine">© <span id="year"></span> blendART Barber Studio · Tue–Sat · appointments &amp; walk-ins</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
