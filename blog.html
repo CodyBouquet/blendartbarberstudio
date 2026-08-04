@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio News — blendART Barber Studio</title>
+  <meta name="description" content="News and updates from blendART Barber Studio in Frankfort, Illinois — hours, specials, and fresh work.">
+  <link rel="preload" href="fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/permanent-marker-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' font-family='Arial Black' fill='%23FF3D7F'>b</text></svg>">
+</head>
+<body>
+
+  <a class="skip-link" href="#posts">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="wordmark" href="index.html" aria-label="blendART Barber Studio — home">
+      blend<span class="wm-grad">ART</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="index.html#services">Cuts</a>
+      <a href="index.html#artists">Artists</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="index.html#visit">Visit</a>
+      <a class="btn btn-loud btn-small" href="index.html#book">Book now</a>
+    </nav>
+  </header>
+
+  <!-- ======================= HEAD ======================= -->
+  <section class="section blog-head">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="marker eyebrow-marker">the blog</p>
+        <h2>Studio<br><span class="h2-grad">news</span></h2>
+        <p class="section-note">News from the chair — hours, specials, new work, whatever's worth saying. Straight from the studio.</p>
+      </div>
+    </div>
+    <div class="spray spray-a" aria-hidden="true"></div>
+  </section>
+
+  <!-- ======================= POSTS ======================= -->
+  <section class="section section-paper" id="posts">
+    <div class="section-inner blog-inner">
+      <!-- List, single post, or empty/error state — rendered by blog.js -->
+      <p class="blog-state marker" id="blog-state">loading…</p>
+      <div id="blog-content"></div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="wordmark wordmark-big" href="index.html">blend<span class="wm-grad">ART</span></a>
+      <p class="footer-line">Barber Studio · Frankfort, IL · <a href="tel:+17089951059">708.995.1059</a></p>
+      <p class="footer-fine">© <span id="year"></span> blendART Barber Studio · Tue–Sat · appointments &amp; walk-ins</p>
+    </div>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>

@@ -626,3 +626,102 @@ h2 {
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---------- blog (blog.html) ---------- */
+
+.blog-head {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+.blog-head .section-head { margin-bottom: 0; }
+
+.blog-inner { max-width: 46rem; }
+
+.blog-state {
+  color: #55524B;
+  font-size: 1.15rem;
+  transform: rotate(-1deg);
+  display: inline-block;
+}
+
+/* list view — poster-style rows, same bones as the menu */
+.post-card {
+  padding: 2rem 0.2rem;
+  border-bottom: 3px solid var(--ink);
+}
+.post-card:first-child { padding-top: 0.5rem; }
+.post-card:last-child { border-bottom: none; }
+
+.post-date {
+  color: var(--red);
+  font-size: 1rem;
+  transform: rotate(-1.5deg);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.post-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 4.5vw, 2.6rem);
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+.post-title a { text-decoration: none; color: var(--ink); }
+.post-title a:hover {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.post-excerpt {
+  margin: 0.8rem 0 1.2rem;
+  color: #55524B;
+  max-width: 38rem;
+}
+
+/* single post view */
+.post-heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.post-body {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.post-body h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  line-height: 1.05;
+  margin: 2.2rem 0 0.8rem;
+}
+.post-body h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 2.8vw, 1.5rem);
+  text-transform: uppercase;
+  margin: 1.8rem 0 0.6rem;
+}
+.post-body p { margin-bottom: 1.1rem; }
+.post-body ul, .post-body ol { margin: 0 0 1.1rem 1.4rem; }
+.post-body li { margin-bottom: 0.35rem; }
+.post-body a { color: var(--red); font-weight: 600; }
+.post-body blockquote {
+  border-left: 5px solid var(--red);
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  margin: 0 0 1.1rem;
+  font-family: var(--font-marker);
+  font-size: 1.15rem;
+  color: #3B3934;
+}
+.post-body blockquote p { margin: 0; }
+.post-body strong { color: #000; }
+
+.post-back { margin-top: 2rem; }
