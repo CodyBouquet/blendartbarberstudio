@@ -725,3 +725,111 @@ h2 {
 .post-body strong { color: #000; }
 
 .post-back { margin-top: 2rem; }
+
+/* share row — under the post body */
+.share-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 2.2rem;
+  padding-top: 1.4rem;
+  border-top: 3px solid var(--ink);
+}
+.share-label {
+  color: var(--red);
+  font-size: 1.05rem;
+  transform: rotate(-1.5deg);
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+/* comments */
+.comments { margin-top: 2.6rem; }
+
+.comments-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.comment {
+  padding: 1rem 0;
+  border-bottom: 3px solid var(--ink);
+}
+.comment:last-child { border-bottom: none; }
+
+.comment-who { margin-bottom: 0.3rem; }
+.comment-who strong { text-transform: uppercase; letter-spacing: 0.02em; }
+.comment-when {
+  font-family: var(--font-marker);
+  color: var(--red);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.comment-text {
+  color: #3B3934;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.comment-empty {
+  color: #55524B;
+  font-size: 1.1rem;
+  transform: rotate(-1deg);
+  display: inline-block;
+}
+
+/* the form */
+.comment-form {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+.comment-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.95rem;
+}
+.comment-label input,
+.comment-label textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2.5px solid var(--ink);
+  padding: 0.65rem 0.8rem;
+  width: 100%;
+  resize: vertical;
+}
+.comment-label input:focus,
+.comment-label textarea:focus {
+  outline: none;
+  box-shadow: 4px 4px 0 var(--red);
+}
+.comment-msg {
+  color: var(--red);
+  font-size: 1rem;
+  min-height: 1.4em;
+  transform: rotate(-1deg);
+}
+
+/* honeypot — off-screen for humans, present for bots */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
