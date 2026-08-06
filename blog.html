@@ -30,7 +30,12 @@
     <a class="wordmark" href="index.html" aria-label="blendART Barber Studio — home">
       blend<span class="wm-grad">ART</span>
     </a>
-    <nav aria-label="Main">
+    <button class="nav-toggle" id="nav-toggle" type="button"
+            aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-bars" aria-hidden="true"></span>
+    </button>
+
+    <nav id="nav-menu" aria-label="Main">
       <a href="index.html#services">Cuts</a>
       <a href="index.html#artists">Artists</a>
       <a href="blog.html" aria-current="page">Blog</a>
@@ -69,6 +74,7 @@
     </div>
   </footer>
 
+  <script src="nav.js"></script>
   <script src="blog.js"></script>
 </body>
 </html>

@@ -19,7 +19,12 @@
     <a class="wordmark" href="#top" aria-label="blendART Barber Studio — back to top">
       blend<span class="wm-grad">ART</span>
     </a>
-    <nav aria-label="Main">
+    <button class="nav-toggle" id="nav-toggle" type="button"
+            aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-bars" aria-hidden="true"></span>
+    </button>
+
+    <nav id="nav-menu" aria-label="Main">
       <a href="#services">Cuts</a>
       <a href="#artists">Artists</a>
       <a href="blog.html">Blog</a>
@@ -161,6 +166,7 @@
     </div>
   </footer>
 
+  <script src="nav.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
